@@ -181,9 +181,13 @@ end
 
 def player_stats(player_name)
   hash = game_hash
-  result = []
   hash.each do |team, data|
-    
+    data[:players].each do |player|
+      if player[:player_name] == player_name
+        return player
+      end
+    end
+  end
 end
   
   
