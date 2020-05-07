@@ -189,6 +189,12 @@ def player_stats(player_name)
     end
   end
 end
+
+def big_shoe_rebounds
+  hash = game_hash
+  big_player = hash[:home][:players][0]
+  
+end
   
   
   
