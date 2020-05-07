@@ -129,7 +129,8 @@ end
 # Write code here
 
 def num_points_scored(player_name)
-  
+  hash = game_hash
+  hash.each do 
 end
   
   
