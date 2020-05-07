@@ -165,6 +165,19 @@ def team_names
   team2 = hash[:away][:team_name]
   return [team1, team2]
 end
+
+def player_numbers(team_name)
+  hash = game_hash
+  result = []
+  hash.each do |team, data|
+    if data[:team_name] == team_name
+      data[:players].each do |player|
+        result.push(player[:number])
+      end
+    end
+  end
+  result
+end
   
   
   
