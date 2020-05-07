@@ -196,6 +196,14 @@ def big_shoe_rebounds
   hash = game_hash
   big_player = hash[:home][:players][0]
   
+  hash.each do |team, data|
+    data[:players].each do |player|
+      if player[:shoe] > big_player[:shoe]
+        big_player = player
+      end
+    end
+  end
+  big_player[:rebounds]
 end
   
   
