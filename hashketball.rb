@@ -178,6 +178,13 @@ def player_numbers(team_name)
   end
   result
 end
+
+def player_stats(player_name)
+  hash = game_hash
+  result = []
+  hash.each do |team, data|
+    
+end
   
   
   
