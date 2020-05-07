@@ -195,7 +195,7 @@ end
 def big_shoe_rebounds
   hash = game_hash
   big_player = hash[:home][:players][0]
-  binding.pry
+  
 end
   
   
