@@ -206,10 +206,5 @@ def big_shoe_rebounds
   big_player[:rebounds]
 end
   
-  
-  
-  
-  
-  
-  
+
   
